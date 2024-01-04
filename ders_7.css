@@ -1,0 +1,311 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+} /*! Bu özelliği her zaman uygula*/
+
+/*! Header kısmı */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+/*! Header kısmı */
+
+header img {
+  width: 300px;
+}
+
+header input {
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px; /*! input arama alanın köşelerini kıvrımlaştırı*/
+  background-color: rgb(201, 198, 198);
+  /* Arama alanının arka plan rengi */
+  border: none; /* Arama alanının kenarlığını yok eder */
+}
+
+header .icons {
+  display: flex;
+  gap: 30px; /*! gap kodunu kullanabilmek için önceden display:flex; aktif etmiş olmamız gerekiyor*/
+}
+
+header .input-area input {
+  position: relative;
+}
+header .input-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+header .input-area i {
+  position: absolute;
+  margin: 10px;
+  color: orangered;
+  background-color: rgb(201, 198, 198);
+}
+header .input-area i:hover {
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.icons i:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icons span {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.icons span:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/*! Kadın & Erkek kategorisi */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.categories li {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.categories li:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.categories span {
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+}
+/*! Kadın & Erkek kategorisi */
+
+/* SANA ÖZEL Kurumsal.... (brands kısmı) */
+.brands {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.brands img {
+  width: 60px;
+}
+.brands div {
+  display: flex;
+  flex-direction: column; /*! Yazıları sütun halinde alta yazar*/
+  align-items: center;
+  gap: 10px;
+}
+
+.brands span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.brands img {
+  border-radius: 50px;
+}
+.brands img:hover {
+  border: 1px solid orangered; /*? border(kenarlık) 1px solid(çizgili) olsun/--dotted(noktalı kenarlık)--*/
+  cursor: pointer;
+  transition: 0.7s;
+}
+.brands span:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.7s;
+}
+/* SANA ÖZEL Kurumsal.... (brands kısmı) */
+
+/*!SEPETE EN ÇOK EKLENENLER,ÖNE ÇIKANLAR,FLAŞ ÜRÜNLER*/
+.titles {
+  display: flex;
+  justify-content: center;
+}
+.titles img {
+  width: 400px;
+  padding: 10px;
+  cursor: pointer;
+}
+.titles img:hover {
+  scale: 1.03; /*? İmleç elemanların üzerine götürüldüğünde büyülür küçülür*/
+  transition: 0.7s;
+}
+/*!SEPETE EN ÇOK EKLENENLER,ÖNE ÇIKANLAR,FLAŞ ÜRÜNLER*/
+
+/*! ÇOK SATAN ÜRÜNLER*/
+.cards{
+  display: flex;
+  border: 2px solid antiquewhite;
+  background-color: rgb(206, 202, 202);
+  gap: 10px;
+  margin: 10px;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card-info{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ 
+  background-color:#fff ;
+  margin: 10px;
+}
+.card-info img{
+  border-radius: 10px;
+  height: 240px;
+  width: 150px;
+  margin: 10px;
+
+}
+.card-info img:hover{
+  scale: 1.03;
+  transition: .7s;
+  cursor: pointer;
+}
+.card-info .description h4{
+  font-weight: bold;
+}
+.card-info .description h5{
+  color: gray;
+}
+.card-info .description{
+  display: flex;
+  align-items: center;
+  gap: 3px ;
+  font-size: 13px;
+}
+.card-info p{
+  color: orangered;
+  font-weight: bold;
+}
+/*! ÇOK SATAN ÜRÜNLER*/
+
+
+/*! IMG-CONTAINER*/
+.img-container{
+  display: grid;
+  place-items: center ;
+  gap: 20px;
+  padding: 10px;
+  grid-template-columns:auto auto auto ;
+}
+.img-container img{
+  width: 700px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.img-container img:hover{
+  scale: 1.03;
+  transform: 0.7s;
+}
+/*! IMG-CONTAINER*/
+
+
+/*!TAGS*/
+.tags{
+  display: flex;
+  flex-direction: column;
+  gap: 20px ;
+  padding: 20px;
+}
+.tags a{
+  color: black;
+padding: 10px;
+text-decoration: none; /*? Link(bağlantı) çizgisini kaldırı*/
+border: 1px solid;
+gap: 10px ;
+border-radius: 10px;
+}
+.tags a:hover{
+  color: orangered;
+}
+/*!TAGS*/
+
+/*!CONTENT*/
+.content{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+/*!CONTENT*/
+
+
+
+/*POPULAR*/
+.popular{
+  display: flex;
+  justify-content: center;
+  gap: 50px ;
+}
+.popular li{
+  list-style-type: none;
+}
+/*POPULAR*/
+
+
+
+/*!FOOTER*/
+footer{
+  display: flex;
+  flex-direction: column;
+padding: 30px;
+  background-color: black;
+  color: white;
+  height: 270px;
+}
+.foot-title{
+  display: flex;
+  justify-content: space-around;
+}
+.foot-list{
+  padding: 20px;
+}
+.foot-list li {
+  list-style-type: none;
+}
+.foot-image img {
+ height: 135px;
+ width: 290px;
+}
+.foot-icons{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.foot-icons i:nth-child(1){
+  color: blue;
+}
+.foot-icons i:nth-child(2){
+  color: aqua;
+}
+.foot-icons i:nth-child(3){
+  color: purple;
+}
+/*!FOOTER*/
+.copyright{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+.copyright-info{
+  display: flex;
+  gap: 30px;
+  color: white;
+}
